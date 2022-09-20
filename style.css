@@ -1,0 +1,330 @@
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+header {
+  font-family:'Aboreto', cursive;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #eb7712;
+  font-family: 'Oswald';
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .drop {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0; 
+
+}
+
+.navbar a:hover, .dropdown:hover .drop {
+  background-color: grey;
+}
+
+.dropdown-conteudo {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-conteudo a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-conteudo a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-conteudo {
+  display: block;
+}
+
+.logo h2{
+  color: #f8c361;
+  font-size: 70px;
+}
+
+.logo span {
+  color: #eb7712;
+}
+
+.section1 {
+  display: flex;
+  justify-content: center;
+}
+
+.areatitle h3 {
+  color: #5e6b4f;
+  font-weight: normal;
+  font-size: 25px;
+
+}
+
+.areatitle h1 {
+  color: rgb(56, 55, 55);
+  font-size: 42px;
+  line-height: 50px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+
+.areatitle button {
+
+  background: #eb7712;
+  padding: 19px 28px;
+  border:none;
+  text-shadow: rgba(0,0,0,.4) 0 1px 1px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: Helvetica, Arial, Sans-Serif;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  }
+
+.areatitle button:hover {
+
+  background: #775d4b;
+  color: #fff0e0;
+
+  }
+.areatitle button:active {
+  border-top-color: #5c341b;
+  background: #5c341b;
+  }
+
+
+.img-hor img {
+  width: 500px;
+  height: 290px;
+  object-fit: cover;
+  margin-top: 30px;
+  margin-left: 35px;
+}
+
+.categorias {
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-top: 80px;
+margin-bottom: 80px;
+height: 400px;
+
+}
+
+.categorias h2{
+  text-transform: uppercase;
+  font-size: 22px;
+  color:  rgb(56, 55, 55);
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+
+}
+
+.card{
+  background-color: #f7dec3;
+  width: 200px;
+  height: 180px;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  background-color: #ecc884;
+  transition: 0.3s all;
+  cursor: pointer;
+
+}
+
+.card img{
+  width: 65px;
+}
+
+.informativo {
+  background-color: #eb7712;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.atendimento h1{
+  font-size: 35px;
+  color:#fff;
+  font-weight: 200;
+  text-transform: uppercase;
+  
+}
+
+.atendimento h3 {
+  font-size: 25px;
+  font-weight: 300;
+  margin-top: -30pxs;
+
+  
+}
+
+.atendimento a {
+  display: inline-block;
+  background-color: #fff;
+  padding: 15px 60px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.atendimento a:hover {
+  background-color: #cce9ab;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.imagemvert img {
+  width: 280px;
+  height: 380px;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+.area-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  margin-top: -20px;
+  flex-direction: column;
+
+}
+
+.area-form h2 {
+  color:  rgb(56, 55, 55);
+  text-transform: uppercase;
+  font-size: 38px;
+  margin-bottom: -20px;
+  font-family: 'Oswald';
+  font-weight: 200;
+}
+
+
+.formulario form{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 400px;
+  height: 200px;
+}
+
+
+.formulario input {
+  margin-top: 20px;
+  padding-left: 10px;
+  height: 30px;
+  border: none;
+  outline: none;
+  font-family: 'Oswald';
+  background-color: #faeacb;
+
+}
+
+input::placeholder{
+  text-transform: uppercase;
+  
+}
+
+input[type="submit"]{
+  background-color: #eb7712;
+  font-size: 18px;
+  color: #fff;
+  height: 45px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  background-color: gray;
+  transition: 0.3s all;
+
+}
+
+footer {
+  margin-top: -50px;
+  margin-bottom: 100px;
+}
+
+
+.rodape{
+  display: flex;
+  justify-content: center;
+  color: rgb(56, 55, 55);
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+
+}
+
+.redes img{
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.creditos {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+.creditos a{
+  text-decoration: none;
+  color: inherit;
+}
